@@ -22,6 +22,7 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
 }
 
 header h1 {
@@ -72,6 +73,55 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.participants li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  color: #b71c1c;
+}
+
+.theme-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.theme-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dark-theme .theme-btn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .form-group {
@@ -141,4 +191,78 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+/* Dark Theme */
+.dark-theme body {
+  color: #ffffff;
+  background-color: #121212;
+}
+
+.dark-theme header {
+  background-color: #333333;
+}
+
+.dark-theme section {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme section h3 {
+  border-bottom: 1px solid #555555;
+  color: #64b5f6;
+}
+
+.dark-theme .activity-card {
+  border: 1px solid #555555;
+  background-color: transparent;
+}
+
+.dark-theme .activity-card h4 {
+  color: #ffffff;
+}
+
+.dark-theme .activity-card p {
+  color: #ffffff;
+}
+
+.dark-theme .participants {
+  color: #ffffff;
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group select {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+.dark-theme button {
+  background-color: #333333;
+}
+
+.dark-theme button:hover {
+  background-color: #555555;
+}
+
+.dark-theme .success {
+  background-color: #1b5e20;
+  color: #81c784;
+  border: 1px solid #4caf50;
+}
+
+.dark-theme .error {
+  background-color: #b71c1c;
+  color: #ef5350;
+  border: 1px solid #f44336;
+}
+
+.dark-theme .info {
+  background-color: #0d47a1;
+  color: #64b5f6;
+  border: 1px solid #2196f3;
+}
+
+.dark-theme footer {
+  color: #cccccc;
 }
